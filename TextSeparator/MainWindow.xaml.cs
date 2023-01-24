@@ -8,10 +8,6 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace TextSeparator
 {
-    // C:\Users\v.skopal\Desktop\TEST.txt
-
-    // Dopiš kód v C# v objektově orientovaném programování, aplikace by měla dělat rozdělení textu v souboru, kde najde 180 slov, následně najde konec věty, přidá odstavec a pokračuje dále, nakonec výsledek uloží do nového textového souboru:
-
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -54,18 +50,9 @@ namespace TextSeparator
 
 
 
-            //Viewer1.Text = File.ReadAllText(newFilePath);
             Viewer1.Text = File.ReadAllText(myPath);
             Viewer2.Text = File.ReadAllText(newFilePath);
         }
-        /*
-                private static async Task WriteText(string @Cesta)
-                {
-                    var line = File.ReadAllLines(@Cesta);  
-                    await File.WriteAllLinesAsync("WriteLines.txt", line);         
-                }
-        */
-
     }
 }
 
